@@ -1,8 +1,8 @@
 services:
   - type: web
     name: userhub-backend
-    runtime: docker
+    runtime: buildpack
     plan: free
     branch: master
     buildCommand: ./mvnw clean package -DskipTests
-    startCommand: ""
+    startCommand: java -jar target/*.jar
