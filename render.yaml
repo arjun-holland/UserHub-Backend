@@ -1,7 +1,7 @@
 services:
   - type: web
     name: userhub-backend
-    runtime: java
+    runtime: buildpack
     plan: free
     branch: master
     buildCommand: ./mvnw clean package -DskipTests
