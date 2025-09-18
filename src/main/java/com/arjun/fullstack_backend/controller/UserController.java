@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 // @CrossOrigin("http://localhost:3000") //to get the request from the frontend give its URL here
-@CrossOrigin("https://user-hub-frontend-two.vercel.app/") //to get the request from the frontend give its URL here
+@CrossOrigin("https://user-hub-frontend-two.vercel.app") //to get the request from the frontend give its URL here
 public class UserController {
     @Autowired
      private UserRepository userRepository;
